@@ -7,6 +7,8 @@ The following files are part of this project:
 - 3.  run_analysis.R (creates the tidy data set)
 - 4.  tidydata.txt (the output of the script, stored on Coursera)
 
+For an explanation of the original data set please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 
 The run_analysis.R script assumes it is placed as the same level as the "UCI HAR Dataset" directory.  As you will see in the script, the first line of code takes you into this directory.
 ```{r}
