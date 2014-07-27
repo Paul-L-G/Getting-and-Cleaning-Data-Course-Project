@@ -2,10 +2,10 @@ Getting-and-Cleaning-Data-Course-Project
 ========================================
 
 The following files are part of this project:
-1.  README.md (this file)
-2.  Codebook.md (Description of the data set)
-3.  run_analysis.R (creates the tidy data set)
-4.  tidydata.txt (the output of the script, stored on Coursera)
+- 1.  README.md (this file)
+- 2.  Codebook.md (Description of the data set)
+- 3.  run_analysis.R (creates the tidy data set)
+- 4.  tidydata.txt (the output of the script, stored on Coursera)
 
 
 The run_analysis.R script assumes it is placed as the same level as the "UCI HAR Dataset" directory.  As you will see in the script, the first line of code takes you into this directory.
@@ -73,10 +73,10 @@ colnames(subtestdata) <- c("TimeBodyAcceleratorMeanX","TimeBodyAcceleratorMeanY"
 The second, independent tidy data set is created with the average of each variable for each activity and each subject
 (Per Step 5 of the instructions for this creating run_analysis.R)
 This data adheres to the definition tidy data for this course per Week 1 "The Components of Tidy Data"
-1. Each variable measured is in one column  
-2. Each different observation of that variable should be a different row  
-3. A row of variable names at the top is available from the write.table   performed below
-4. The variable names are human readable  
+- 1. Each variable measured is in one column  
+- 2. Each different observation of that variable should be a different row  
+- 3. A row of variable names at the top is available from the write.table   performed below
+- 4. The variable names are human readable  
 Also meeting the requirements of tidy data per this discussion, 
 https://class.coursera.org/getdata-005/forum/thread?thread_id=199
 ```{r}
