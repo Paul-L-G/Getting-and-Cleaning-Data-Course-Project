@@ -9,8 +9,9 @@ The following files are part of this project:
 
 For an explanation of the original data set please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+Run run_analysis.R by sourcing the script in R source("run_analysis.R")
 
-The run_analysis.R script assumes it is placed as the same level as the "UCI HAR Dataset" directory.  As you will see in the script, the first line of code takes you into this directory.
+The run_analysis.R script assumes it is placed at the same level as the "UCI HAR Dataset" directory.  As you will see in the script, the first line of code takes you into this directory.
 ```{r}
 setwd("UCI HAR Dataset") 
 ```
