@@ -11,10 +11,9 @@ The tidy dataset created goes through the following steps to be created
 - Appropriately labels the data set with descriptive variable names. 
 - Creates a second, independent tidy data set with the average (mean) of each variable for each activity and each subject. 
 
+For an explanation of the original data set please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 The following are the columns of the tidydata.txt file
-
-For and explanation of the original data set please see http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-
 
 Activity - char
 - Factor var. WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
