@@ -53,8 +53,9 @@ subsetdata <- alldata[,meanstd]
 ```
 
 Factor the Activity Numbers (1-6) so they are represented by descriptive activity name (Per Step 3 of the instructions for creating run_analysis.R)
+which are available in the activity_labels.txt file
 ```{r}
-subsetdata <- cbind(subtestdata, factor(subtestdata[,67],labels = c("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"))) which I got from the activity_labels.txt file
+subsetdata <- cbind(subtestdata, factor(subtestdata[,67],labels = c("WALKING","WALKING_UPSTAIRS","WALKING_DOWNSTAIRS","SITTING","STANDING","LAYING"))) 
 ```
 The script then adds descriptive variable names (Per 4 One of the instructions for this creating run_analysis.R)
 The code below is truncated since it contains 69 column names.  Please see the code book for more information.
@@ -65,10 +66,10 @@ colnames(subtestdata) <- c("TimeBodyAcceleratorMeanX","TimeBodyAcceleratorMeanY"
 The second, independent tidy data set is created with the average of each variable for each activity and each subject
 (Per Step 5 of the instructions for this creating run_analysis.R)
 This data adheres to the definition tidy data for this course per Week 1 "The Components of Tidy Data"
-1. Each variable measured is in one column
-2. Each different observation of that variable should be a different row
-3. A row of variable names at the top is available from the write.table performed below
-4. The variable names are human readable
+1. Each variable measured is in one column  
+2. Each different observation of that variable should be a different row  
+3. A row of variable names at the top is available from the write.table   performed below
+4. The variable names are human readable  
 Also meeting the requirements of tidy data per this discussion, 
 https://class.coursera.org/getdata-005/forum/thread?thread_id=199
 ```{r}
@@ -76,4 +77,6 @@ tidydata <- aggregate(subtestdata[,1:66], list( Activity = subtestdata$Activity,
 ```
 
 The data is Written out to file for submission using write.table, and can be read back into R using read.table("tidydata.txt")
-
+```{r}
+write.table(tidydata, file = "tidydata.txt", row.names = FALSE)
+```
